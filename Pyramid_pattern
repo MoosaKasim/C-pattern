@@ -1,0 +1,43 @@
+/* 
+Name        :   MK MOOSA KASIM
+Date        :   3-1-2022
+Description :   WAP to print pyramid pattern as shown below
+Input       :   Enter the number : 4
+Output      :   4
+                3 4
+                2 3 4
+                1 2 3 4
+                2 3 4
+                3 4
+                4
+*/
+
+#include <stdio.h>  
+  
+int main()  
+{  
+    int num, i, j;   
+    printf (" Enter the number: \n");  
+    scanf ("%d", &num);  
+    for (i =num; i>=1; i-- )  
+    {  
+            for (j =i; j<=num; j++)  
+        {  
+                       
+            printf( "%d ",j);  
+        }         
+        printf("\n");  
+    }
+
+    
+    for (i =2; i <=num; i++)  
+    {  
+        for (j =i; j <=num; j++)  
+        {  
+           
+            printf("%d ",j);  
+        }  
+        printf("\n");  
+    }  
+ 
+} 
