@@ -1,0 +1,41 @@
+/*
+Name    :       MK MOOSA KASIM
+Date    :       3-1-2022
+Description :   WAP to print triangle pattern as shown below
+Input   :       Enter the number: 4
+Output  :      
+
+                1 2 3 4
+                5     6
+                7 8
+                9
+
+
+*/
+
+#include<stdio.h>
+int main()
+{
+int i,j,n,k;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+k=1;
+for(i=1;i<=n;i++)
+{
+for(j=i;j<=n;j++)
+{
+if ( i==1 || j==i|| j==n)
+{
+printf("%d ",k++);
+
+}
+
+else
+{
+printf(" ");
+}
+}
+printf("\n");
+
+}
+}
